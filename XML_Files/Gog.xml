@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+
+<groups>
+
+<define name="Favourites">
+
+<include name="Chocolates"></include>
+<include name="Icecream"></include>
+
+</define>
+
+<run>
+<include name="Favourites"></include>
+</run>
+
+
+
+
+
+
+</groups>  
+
+
+
+  <classes>
+      <class name="com.testng.features.Group_Concepts"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
